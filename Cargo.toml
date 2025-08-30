@@ -1,0 +1,18 @@
+[package]
+name = "DontStartSchool"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = "0.4"
+windows = { version = "0.61.3", features = [
+    "Win32_Foundation",
+    "Win32_System_SystemServices",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_Graphics_Gdi",
+    "Win32_UI_Controls",
+    "Win32_System_Threading",  
+    "Win32_System_Console",
+    "Win32_System_LibraryLoader",
+] }
+rand = "0.9.2"
